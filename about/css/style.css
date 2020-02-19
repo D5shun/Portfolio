@@ -36,7 +36,7 @@ section {
 .header .gnav {
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 3;
   height: 80px;
   width: 100%;
 }
@@ -248,5 +248,6 @@ section {
   }
   .career .career__contents .career-item {
     width: 100%;
+    margin-bottom: 20px;
   }
 }
