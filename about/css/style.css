@@ -1,0 +1,242 @@
+body {
+  background-color: #eee;
+}
+
+.main {
+  margin-top: 100px;
+  line-height: 1.7em;
+}
+
+section {
+  background-color: #fff;
+  padding-bottom: 60px;
+  margin: 60px auto;
+  max-width: 800px;
+  border-radius: 0.5em;
+}
+
+.section__title {
+  color: #444;
+  font-family: 'Yu Gothic';
+  font-size: 2.4rem;
+  padding: 40px 0.5em 15px;
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.section__title::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  content: '';
+  width: 200px;
+  height: 2px;
+  background-color: #ff9100;
+}
+
+.header {
+  width: 100%;
+}
+
+.header .gnav {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  height: 100px;
+  width: 100%;
+}
+
+.header .gnav .gnav__menu {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  justify-content: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  height: 100px;
+}
+
+.header .gnav .gnav__menu .gnav__menu-works, .header .gnav .gnav__menu .gnav__menu-about, .header .gnav .gnav__menu .gnav__menu-contact {
+  margin-right: 45px;
+  font-size: 2.1rem;
+  letter-spacing: 0.02em;
+}
+
+.header .gnav .gnav__menu .gnav__menu-works a, .header .gnav .gnav__menu .gnav__menu-contact a {
+  color: #ccc;
+  transition: 0.45s;
+}
+
+.header .gnav .gnav__menu .gnav__menu-works a:hover, .header .gnav .gnav__menu .gnav__menu-contact a:hover {
+  color: #444;
+}
+
+.about {
+  background-color: transparent;
+  position: relative;
+  height: 400px;
+}
+
+.about .about__image {
+  position: absolute;
+  z-index: 2;
+  top: 20%;
+  left: 5%;
+  max-width: 380px;
+  margin-right: 1.1em;
+}
+
+.about .about__image img {
+  width: 90%;
+  object-fit: cover;
+}
+
+.about .about__contents {
+  position: absolute;
+  right: -10%;
+  top: 0;
+  width: 67%;
+  background-color: #fff;
+  padding-left: 5em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.about .about__contents .about__title {
+  font-family: 'Yu Gothic';
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ff9100;
+}
+
+.past .past__text {
+  margin: 0 auto;
+  max-width: 650px;
+}
+
+.vision {
+  background-color: #c6ebfc;
+}
+
+.vision .vision__text {
+  margin: 0 auto;
+  max-width: 650px;
+}
+
+.skill {
+  max-width: 1080px;
+}
+
+.skill .skill__contents {
+  display: flex;
+  text-align: center;
+}
+
+.skill .skill__contents .skill__list {
+  width: 100%;
+  margin: 0 20px;
+}
+
+.skill .skill__contents .skill__list .skill__list-name {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.skill .skill__contents .skill__list span {
+  font-size: 4rem;
+}
+
+.skill .skill__contents .skill__list .skill__list-text {
+  margin-top: 15px;
+}
+
+.career {
+  background-color: transparent;
+}
+
+.career .career__contents {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.career .career__contents .career-list {
+  width: 50%;
+  white-space: nowrap;
+}
+
+.career .career__contents .career-item {
+  margin-bottom: 10px;
+  margin-left: 15%;
+  white-space: nowrap;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 60px;
+  padding: 30px 0 10px 0;
+  border-top: 2px solid gray;
+  background-color: #eee;
+}
+
+.footer .sns-list {
+  margin-bottom: 10px;
+}
+
+.footer .sns-list .sns-icon {
+  color: #bbb;
+  font-size: 3.2rem;
+  margin-right: 20px;
+  transition: 0.45s;
+}
+
+.footer .sns-list .sns-icon:hover {
+  color: #555;
+}
+
+@media screen and (max-width: 700px) {
+  .about {
+    width: 90%;
+    height: 570px;
+  }
+  .about .about__image {
+    left: 11%;
+    max-width: 340px;
+  }
+  .about .about__contents {
+    right: 0;
+    width: 100%;
+    padding-left: 3em;
+  }
+  .about .about__contents .about__title {
+    margin-bottom: 250px;
+  }
+  .past, .vision, .skill, .career {
+    width: 90%;
+  }
+  .past .past__text {
+    width: 85%;
+  }
+  .vision .vision__text {
+    width: 85%;
+  }
+  .skill .skill__contents {
+    flex-wrap: wrap;
+  }
+  .skill .skill__contents .skill__list {
+    width: 60%;
+    margin: 0 auto 20px;
+  }
+}

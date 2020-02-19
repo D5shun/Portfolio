@@ -1,0 +1,27 @@
+@charset 'utf-8';
+
+body, .worksPage__top, .footer {
+  background-color: rgb(255, 209, 139);
+}
+
+.section__sub-title {
+  font-size: 2.0rem;
+  margin: 60px 0 40px;
+  text-align: center;
+}
+.process__contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.process__contents img {
+  margin: 10px;
+  width: 43%;
+  vertical-align: bottom;
+}
+
+@media screen and (max-width: 900px) {
+  .process__contents img {
+    width: 90%;
+  }
+}

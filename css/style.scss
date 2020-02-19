@@ -1,0 +1,195 @@
+@charset 'utf-8';
+
+//　ここから共通パーツ　
+$yellow:rgb(255,255,0);
+$green:rgb(0, 255, 140);
+$pink: rgb(255, 130, 188);
+$purple:rgb(128, 0, 255);
+$blue:rgb(0, 128, 255);
+$skyblue: rgb(59, 243, 247);
+$orange: rgb(255, 140, 0);
+body {
+    background-color: #eee;
+}
+#topWorks {
+    // topWorks(section)タイトル中央寄せ
+    text-align: center;
+    .section__title {
+        color: #444;
+        display: inline-block;
+        font-family: 'Yu Gothic';
+        font-size: 4.0rem;
+        // padding: 0 .5em 5px;
+        margin: 80px 0 0px;
+        // border-bottom: 1.5px solid #444;
+    }
+    .section__sub-title {
+        font-family: 'Yu Gothic';
+        display: inline-block;
+        width: 15%;
+        font-size: 2.0rem;
+        margin: 60px auto 50px;
+        border-bottom: 1.5px solid #444;
+        // 文字とボーダーの間の余白
+        padding-bottom: 5px;
+        // padding-right: 1.2em;
+        // padding-left: 1.2em;
+    }
+}
+@media screen and (max-width: 600px) {
+    #topWorks {
+        .section__sub-title {
+            width: 25%;
+        }
+    }
+}
+//　ここまで共通パーツ　
+//　ここからheader　
+.header {
+    width: 100%;
+    .gnav {
+        position: fixed;
+        z-index:2;
+        top: 0;
+        height: 100px;
+        width: 100%;
+        .gnav__menu {
+            display: flex;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            justify-content: flex-end;
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
+            height: 100px;
+            .gnav__menu-works, .gnav__menu-about, .gnav__menu-contact {
+                margin-right: 45px;
+                font-size: 2.1rem;
+                letter-spacing: 0.02em;
+            }
+            .gnav__menu-about a, .gnav__menu-contact a{
+                color: #ccc;
+                transition: 0.45s;
+                &:hover {
+                    color: #444;
+                }
+            }
+        }
+    }
+}
+//　ここまでheader　
+//　ここからmain　
+.main {
+    background-color: #eee;
+}
+#topMain {
+    .topMain__title {
+        white-space: nowrap;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 4.0rem;
+        font-weight: normal;
+        letter-spacing: 0.02em;
+    }
+    .topMain__mainVisual {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+#topWorks {
+    max-width: 960px;
+    margin: 0 auto;
+    .topWorks__contents:first-of-type {
+        .topWorks__list {
+            &:first-of-type img {
+                border: 5px solid $orange;
+            }
+        }
+    }
+    .topWorks__contents {
+        display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        flex-wrap: wrap;    
+        -ms-flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+        .topWorks__list {
+            margin-bottom: 10px;
+            // レスポンシブの時はwidth:100%にする
+            width: 50%;
+            img {
+                width: 90%;
+                vertical-align: bottom;
+                transition: 0.5s;
+                margin-bottom: 10px;
+                object-fit: cover;
+                &:hover {
+                    opacity: 0.7;
+                    width: 92%;
+                    height: 92%;
+                }
+            }
+            &:first-of-type img {
+                border: 5px solid $yellow;
+            }
+            &:nth-of-type(2) img {
+                border: 5px solid $green;
+            }
+            &:nth-of-type(3) img {
+                border: 5px solid $pink;
+            }
+            &:nth-of-type(4) img {
+                border: 5px solid $blue;
+            }
+            &:nth-of-type(5) img {
+                border: 5px solid $purple;
+            }
+            &:nth-of-type(6) img {
+                border: 5px solid $skyblue;
+            }
+            .topWorks__list-copy {
+                font-size: 1.7rem;
+            }
+        }
+
+    }
+}
+//　ここまでmain　
+//　ここからfooter　
+.footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 30px 0 10px 0;
+    border-top: 2px solid gray;
+    background-color: #eee;
+    .sns-list {
+        margin-bottom: 10px;
+        .sns-icon {
+            color: #bbb;
+            font-size: 3.2rem;
+            margin-right: 20px;
+            transition: 0.45s;
+            &:hover {
+                color: #555;
+            }
+        }
+    } 
+}
+//　ここからfooter　
+@media screen and (max-width: 600px) {
+    #topWorks {
+        .topWorks__contents {
+            .topWorks__list {
+                margin: 0 auto 20px;
+                width: 80%;
+            }
+        }
+    }
+}
