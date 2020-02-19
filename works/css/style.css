@@ -125,15 +125,6 @@
   width: 70%;
 }
 
-@media screen and (max-width: 600px) {
-  .worksPage .worksPage__summary .worksPage__list {
-    width: 100%;
-  }
-  .worksPage .worksPage__summary .summary-item {
-    width: 100%;
-  }
-}
-
 .footer {
   text-align: center;
   margin-top: 60px;
@@ -154,4 +145,22 @@
 
 .footer .sns-list .sns-icon:hover {
   color: #555;
+}
+
+@media screen and (max-width: 600px) {
+  .section__title {
+    font-size: 2.5rem;
+  }
+  .worksPage .worksPage__top .worksPage__mainVisual img {
+    width: 70%;
+  }
+  .worksPage .worksPage__summary {
+    width: 80%;
+  }
+  .worksPage .worksPage__summary .worksPage__list {
+    width: 100%;
+  }
+  .worksPage .worksPage__summary .summary-item {
+    width: 100%;
+  }
 }
