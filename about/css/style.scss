@@ -200,9 +200,16 @@ section {
         }
     } 
 }
-//　ここからfooter　
+//　ここまでfooter　
 
 @media screen and (max-width: 700px) {
+    .header .gnav .gnav__menu {
+        .gnav__menu-works {
+            margin-right: 20px;
+        } .gnav__menu-about {
+            margin-right: 25px;
+        }
+    }
     .about {
         width: 90%;
         height: 570px;
@@ -213,7 +220,7 @@ section {
         .about__contents {
             right: 0;
             width: 100%;
-            padding-left: 3em;
+            padding-left: 2em;
             .about__title {
                 margin-bottom: 250px;
             }

@@ -184,6 +184,13 @@ body {
 }
 //　ここからfooter　
 @media screen and (max-width: 600px) {
+    .header .gnav .gnav__menu {
+        .gnav__menu-works {
+            margin-right: 20px;
+        } .gnav__menu-about {
+            margin-right: 25px;
+        }
+    }
     #topWorks {
         .topWorks__contents {
             .topWorks__list {

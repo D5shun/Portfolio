@@ -151,6 +151,12 @@
   .section__title {
     font-size: 2.5rem;
   }
+  .header .gnav .gnav__menu .gnav__menu-works {
+    margin-right: 20px;
+  }
+  .header .gnav .gnav__menu .gnav__menu-about {
+    margin-right: 25px;
+  }
   .worksPage .worksPage__top .worksPage__mainVisual img {
     width: 70%;
   }
