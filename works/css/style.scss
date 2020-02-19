@@ -92,18 +92,15 @@ $orange: rgb(255, 140, 0);
     .worksPage__summary {
         margin: 50px auto 0;
         width: 60%;
-        display: flex;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
         a:hover {
             // 　関連サイトへのリンク
             text-decoration: underline;
             color: rgb(16, 16, 207);
         }
         .summary-list {
-            width: 30%;
+            vertical-align: top;
+            display: inline-block;
+            width: 29%;
             white-space: nowrap;
             padding-left: 1.5em;
             position: relative;
@@ -119,7 +116,10 @@ $orange: rgb(255, 140, 0);
             }
         }
         .summary-item {
+            vertical-align: top;
+            display: inline-block;
             margin-bottom: 20px;
+            // padding-left: 1.5em;
             width: 70%;
         }
         // .summary-item__link:hover {
