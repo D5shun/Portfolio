@@ -68,6 +68,7 @@ body {
 .header .gnav .gnav__menu .gnav__menu-about a {
   color: #ccc;
   transition: 0.45s;
+  -webkit-transition: 0.45s;
 }
 
 .header .gnav .gnav__menu .gnav__menu-about a:hover {
@@ -80,10 +81,13 @@ body {
 
 #topMain .topMain__title {
   white-space: nowrap;
+  display: block;
+  background-color: pink;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   color: #fff;
   font-size: 4.0rem;
   font-weight: normal;
@@ -119,6 +123,7 @@ body {
   width: 90%;
   vertical-align: bottom;
   transition: 0.5s;
+  -webkit-transition: 0.5s;
   margin-bottom: 10px;
   object-fit: cover;
 }
@@ -173,6 +178,7 @@ body {
   font-size: 3.2rem;
   margin-right: 20px;
   transition: 0.45s;
+  -webkit-transition: 0.45s;
 }
 
 .footer .sns-list .sns-icon:hover {
