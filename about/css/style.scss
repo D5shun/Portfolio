@@ -1,4 +1,5 @@
 @charset 'utf-8';
+
 //　ここから共通パーツ　
 body {
     // background-color: rgb(255, 223, 164);
@@ -17,25 +18,17 @@ section {
     border-radius: 0.5em;
 }
 .section__title {
-    color: #444;
+    width: 100%;
+    text-align: center;
+    p {
+    display: inline-block;
     font-family: 'Yu Gothic';
     font-size: 2.4rem;
-    padding: 40px 0.5em 15px;
-    margin-bottom: 40px;
-    text-align: center;
-    position: relative;
-    &::after {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        content: '';
-        width: 200px;
-        height: 2px;
-        background-color: rgb(255, 145, 0);
+    padding: 0 25px 10px;
+    margin: 40px 0;
+    border-bottom: 2px solid rgb(255, 145, 0);
     }
-    // border-bottom: 1.5px solid rgb(255, 145, 0);
-    }
+}
 
 //　ここから共通パーツ　
 //　ここからheader　
@@ -106,7 +99,11 @@ section {
         padding-left: 5em;
         height: 100%;
         display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
         align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         .about__title {
             font-family: 'Yu Gothic';
             font-size: 2.4rem;
@@ -138,12 +135,17 @@ section {
 .skill {
         // background-color: rgb(255, 223, 164);
         max-width: 1080px;
+        margin: 0 auto;
     .skill__contents {
-        display: flex;
         text-align: center;
+        width: 100%;
+        // margin: 0 20px;
         .skill__list {
-            width: 100%;
-            margin: 0 20px;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            padding: 0 10px;
+            width: 24%;
             .skill__list-name {
                 font-weight: bold;
                 font-size: 1.8rem;
@@ -155,32 +157,23 @@ section {
                 margin-top: 15px;
             }
         }
-        // .skill__list:nth-child(even){
-        //     background-color: pink;
-        // }
-        // .skill__list:nth-child(odd){
-        //     background-color: lightgreen;
-        // }
     }
 }
 .career {
     background-color: transparent;
     .career__contents {
-        display: flex;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
         max-width: 600px;
         margin: 0 auto;
         .career-list {
-            width: 50%;
+            display: inline-block;
+            width: 60%;
             white-space: nowrap;
         }
         .career-item {
+            display: inline-block;
+            text-align: center;
+            width: 39%;
             margin-bottom: 10px;
-            margin-left: 15%;
             white-space: nowrap;
         }
     }
@@ -245,6 +238,18 @@ section {
             .skill__list {
                 width: 60%;
                 margin: 0 auto 20px;
+            }
+        }
+    }
+    .career {
+        .career__contents {
+            .career-list {
+                text-align: center;
+                white-space: wrap;
+                width: 100%;
+            }
+            .career-item {
+                width: 100%;
             }
         }
     }
