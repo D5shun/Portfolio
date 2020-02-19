@@ -51,7 +51,7 @@ body {
         position: fixed;
         z-index:2;
         top: 0;
-        height: 100px;
+        height: 80px;
         width: 100%;
         .gnav__menu {
             display: flex;
@@ -63,13 +63,16 @@ body {
             justify-content: flex-end;
             -webkit-box-pack: end;
             -ms-flex-pack: end;
-            height: 100px;
-            .gnav__menu-works, .gnav__menu-about, .gnav__menu-contact {
-                margin-right: 45px;
-                font-size: 2.1rem;
-                letter-spacing: 0.02em;
+            height: 80px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            .gnav__menu-works {
+                margin-right: 35px;
             }
-            .gnav__menu-about a, .gnav__menu-contact a{
+            .gnav__menu-about {
+                margin-right: 60px;
+            }
+            .gnav__menu-about a {
                 color: #ccc;
                 transition: 0.45s;
                 &:hover {
