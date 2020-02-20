@@ -20,7 +20,10 @@ body, .worksPage__top, .footer {
   margin-right: 10px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
+  .process__contents {
+    width: 90%;
+  }
   .process__contents img {
     width: 100%;
   }

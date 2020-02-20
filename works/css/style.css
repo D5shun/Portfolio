@@ -62,11 +62,12 @@
 }
 
 .worksPage .worksPage__top .worksPage__mainVisual {
-  margin-top: 20px;
+  margin: 20px auto 0;
+  max-width: 60%;
 }
 
 .worksPage .worksPage__top .worksPage__mainVisual img {
-  width: 60%;
+  width: 100%;
 }
 
 .worksPage .worksPage__top .worksPage__codeLink {
@@ -147,7 +148,7 @@
   color: #555;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .section__title {
     font-size: 2.5rem;
   }
@@ -157,11 +158,11 @@
   .header .gnav .gnav__menu .gnav__menu-about {
     margin-right: 25px;
   }
-  .worksPage .worksPage__top .worksPage__mainVisual img {
-    width: 70%;
+  .worksPage .worksPage__top .worksPage__mainVisual {
+    max-width: 90%;
   }
   .worksPage .worksPage__summary {
-    width: 80%;
+    width: 90%;
   }
   .worksPage .worksPage__summary .worksPage__list {
     width: 100%;
