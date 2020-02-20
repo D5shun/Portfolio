@@ -209,11 +209,14 @@ section {
             margin-right: 40px;
         }
     }
+    .main {
+        font-size: 1.4rem;
+    }
     .about {
         width: 90%;
         height: 570px;
         .about__image {
-            left: 11%;
+            left: 10%;
             max-width: 340px;
         }
         .about__contents {

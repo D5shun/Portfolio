@@ -157,6 +157,9 @@
   .header .gnav .gnav__menu .gnav__menu-about {
     margin-right: 40px;
   }
+  .worksPage {
+    font-size: 1.4rem;
+  }
   .worksPage .worksPage__top .worksPage__mainVisual {
     max-width: 90%;
   }
