@@ -193,6 +193,6 @@ body {
   }
   #topWorks .topWorks__contents .topWorks__list {
     margin: 0 auto 20px;
-    width: 80%;
+    width: 100%;
   }
 }

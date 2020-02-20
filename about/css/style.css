@@ -240,11 +240,8 @@ section {
   .vision .vision__text {
     width: 85%;
   }
-  .skill .skill__contents {
-    flex-wrap: wrap;
-  }
   .skill .skill__contents .skill__list {
-    width: 60%;
+    width: 70%;
     margin: 0 auto 20px;
   }
   .career .career__contents .career-list {
