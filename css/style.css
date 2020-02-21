@@ -191,11 +191,8 @@ body {
   .header .gnav .gnav__menu .gnav__menu-about {
     margin-right: 40px;
   }
-  #topWorks {
-    max-width: 100%;
-  }
   #topWorks .topWorks__contents .topWorks__list {
     margin: 0 auto 20px;
-    width: 95%;
+    width: 100%;
   }
 }
