@@ -192,10 +192,10 @@ body {
     margin-right: 40px;
   }
   #topWorks {
-    max-width: 95%;
+    max-width: 100%;
   }
   #topWorks .topWorks__contents .topWorks__list {
     margin: 0 auto 20px;
-    width: 100%;
+    width: 95%;
   }
 }
