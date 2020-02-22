@@ -7,8 +7,7 @@ body {
 }
 .main {
     margin-top: 100px;
-    // font-family: 'Yu Gothic';
-    line-height: 1.7em;
+    line-height: 1.7;
 }
 section {
     background-color: #fff;
@@ -80,11 +79,10 @@ section {
     .about__image {
         position: absolute;
         z-index: 2;
-        top: 20%;
+        top: 22%;
         left: 5%;
         // background-color: blue;
         max-width: 380px;
-        margin-right: 1.1em;
         img {
         width: 90%;
         object-fit: cover;
@@ -203,6 +201,9 @@ section {
 //　ここまでfooter　
 
 @media screen and (max-width: 700px) {
+    html {
+        font-size: 55%;
+    }
     .header .gnav .gnav__menu {
         .gnav__menu-works {
             margin-right: 30px;
@@ -210,14 +211,12 @@ section {
             margin-right: 40px;
         }
     }
-    .main {
-        font-size: 1.4rem;
-    }
     .about {
         width: 90%;
         height: 570px;
         .about__image {
-            left: 10%;
+            top: 23%;
+            left: 7%;
             max-width: 340px;
         }
         .about__contents {
@@ -225,7 +224,7 @@ section {
             width: 100%;
             padding-left: 2em;
             .about__title {
-                margin-bottom: 250px;
+                margin-bottom: 230px;
             }
         }
     }
