@@ -1,9 +1,9 @@
 .section__title {
   color: #444;
-  display: inline-block;
-  font-size: 2.7rem;
+  font-size: 2.3rem;
+  padding: 0 1em;
   line-height: 1.7;
-  margin: 30px;
+  margin: 60px auto 30px;
 }
 
 body, .worksPage__top, .footer {
@@ -158,9 +158,6 @@ body, .worksPage__top, .footer {
   html {
     font-size: 55%;
   }
-  .section__title {
-    font-size: 21px;
-  }
   .header .gnav .gnav__menu .gnav__menu-works {
     margin-right: 30px;
   }
@@ -169,6 +166,7 @@ body, .worksPage__top, .footer {
   }
   .worksPage .worksPage__top .worksPage__mainVisual {
     max-width: 90%;
+    background-color: #fff;
   }
   .worksPage .worksPage__summary {
     width: 90%;
