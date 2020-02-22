@@ -71,7 +71,7 @@ body, .worksPage__top, .footer {
 
 .worksPage .worksPage__top .worksPage__mainVisual img {
   width: 100%;
-  box-shadow: 3px 3px 3px #aaa;
+  box-shadow: 2px 2px 3px #aaa;
 }
 
 .worksPage .worksPage__top .worksPage__codeLink {
