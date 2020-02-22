@@ -12,12 +12,15 @@ $orange: rgb(255, 140, 0);
 .section__title {
     color: #444;
     display: inline-block;
-    font-family: 'Yu Gothic';
     font-size: 3.0rem;
-    padding: 0 .5em 5px;
-    margin: 30px 0 30px;
-    border-bottom: 1.5px solid #444;
+    padding: 0 1em;
+    line-height: 1.7;
+    margin: 30px;
 }
+body, .worksPage__top, .footer {
+    background-color: #eee;
+  }  
+
 //　ここまで共通パーツ　
 //　ここからheader　
 .header {
@@ -26,7 +29,7 @@ $orange: rgb(255, 140, 0);
         position: fixed;
         top: 0;
         z-index:2;
-        height: 80px;
+        height: 70px;
         width: 100%;
         .gnav__menu {
             display: flex;
@@ -38,8 +41,9 @@ $orange: rgb(255, 140, 0);
             justify-content: flex-end;
             -webkit-box-pack: end;
             -ms-flex-pack: end;
-            height: 80px;
+            height: 70px;
             font-size: 2.3rem;
+            font-weight: 700;
             .gnav__menu-works {
                 margin-right: 40px;
             }
@@ -65,11 +69,11 @@ $orange: rgb(255, 140, 0);
         margin-top: 50px;
         text-align: center;
         .worksPage__mainVisual {
-            margin: 20px auto 0;
+            margin: 0 auto;
             max-width: 60%;
             img {
                 width: 100%;
-                // border: 8px solid #fff;
+                box-shadow: 3px 3px 3px #aaa;
             }
         }
         .worksPage__codeLink {
@@ -78,7 +82,7 @@ $orange: rgb(255, 140, 0);
             text-align: end;
             white-space: nowrap;
             .codeLink-text a{
-                color: #bbb;
+                color: #aaa;
                 &:hover {
                     color: #444;
                 }
@@ -89,12 +93,14 @@ $orange: rgb(255, 140, 0);
         }
     }
     .worksPage__summary {
-        margin: 50px auto 0;
+        margin: 40px auto 0;
         width: 60%;
-        a:hover {
-            // 　関連サイトへのリンク
+        a {
             text-decoration: underline;
-            color: rgb(16, 16, 207);
+            &:hover {
+                // 　関連サイトへのリンク
+                color: rgb(16, 16, 207);
+            }
         }
         .summary-list {
             vertical-align: top;

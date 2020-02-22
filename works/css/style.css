@@ -1,11 +1,14 @@
 .section__title {
   color: #444;
   display: inline-block;
-  font-family: 'Yu Gothic';
   font-size: 3.0rem;
-  padding: 0 .5em 5px;
-  margin: 30px 0 30px;
-  border-bottom: 1.5px solid #444;
+  padding: 0 1em;
+  line-height: 1.7;
+  margin: 30px;
+}
+
+body, .worksPage__top, .footer {
+  background-color: #eee;
 }
 
 .header {
@@ -16,7 +19,7 @@
   position: fixed;
   top: 0;
   z-index: 2;
-  height: 80px;
+  height: 70px;
   width: 100%;
 }
 
@@ -30,8 +33,9 @@
   justify-content: flex-end;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  height: 80px;
+  height: 70px;
   font-size: 2.3rem;
+  font-weight: 700;
 }
 
 .header .gnav .gnav__menu .gnav__menu-works {
@@ -61,12 +65,13 @@
 }
 
 .worksPage .worksPage__top .worksPage__mainVisual {
-  margin: 20px auto 0;
+  margin: 0 auto;
   max-width: 60%;
 }
 
 .worksPage .worksPage__top .worksPage__mainVisual img {
   width: 100%;
+  box-shadow: 3px 3px 3px #aaa;
 }
 
 .worksPage .worksPage__top .worksPage__codeLink {
@@ -77,7 +82,7 @@
 }
 
 .worksPage .worksPage__top .worksPage__codeLink .codeLink-text a {
-  color: #bbb;
+  color: #aaa;
 }
 
 .worksPage .worksPage__top .worksPage__codeLink .codeLink-text a:hover {
@@ -89,12 +94,15 @@
 }
 
 .worksPage .worksPage__summary {
-  margin: 50px auto 0;
+  margin: 40px auto 0;
   width: 60%;
 }
 
-.worksPage .worksPage__summary a:hover {
+.worksPage .worksPage__summary a {
   text-decoration: underline;
+}
+
+.worksPage .worksPage__summary a:hover {
   color: #1010cf;
 }
 

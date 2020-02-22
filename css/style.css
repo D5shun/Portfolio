@@ -17,8 +17,8 @@ body {
   display: inline-block;
   font-weight: 500;
   width: 15%;
-  font-size: 2.0rem;
-  margin: 50px auto 30px;
+  font-size: 2.2rem;
+  margin: 40px auto;
   border-bottom: 1.5px solid #444;
   padding-bottom: 5px;
 }
@@ -82,10 +82,10 @@ body {
   white-space: nowrap;
   display: block;
   position: absolute;
-  top: 43%;
+  top: 46.75%;
   left: 50%;
-  transform: translate(-50%, -43%);
-  -webkit-transform: translate(-50%, -43%);
+  transform: translate(-50%, -46.75%);
+  -webkit-transform: translate(-50%, -46.75%);
   color: #fff;
   font-size: 5.5rem;
   font-weight: 500;
@@ -110,7 +110,6 @@ body {
 #topWorks .topWorks__contents .topWorks__list {
   display: inline-block;
   width: 49%;
-  margin-bottom: 10px;
 }
 
 #topWorks .topWorks__contents .topWorks__list img {
@@ -120,6 +119,7 @@ body {
   -webkit-transition: 0.5s;
   margin-bottom: 10px;
   object-fit: cover;
+  box-shadow: 3px 3px 3px #aaa;
 }
 
 #topWorks .topWorks__contents .topWorks__list img:hover {
@@ -127,12 +127,12 @@ body {
 }
 
 #topWorks .topWorks__contents .topWorks__list .topWorks__list-copy {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
 }
 
 .footer {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 40px;
   padding: 30px 0 10px 0;
   border-top: 2px solid gray;
   background-color: #eee;
@@ -162,10 +162,18 @@ body {
     margin-right: 40px;
   }
   html {
-    font-size: 58%;
+    font-size: 55%;
+  }
+  #topMain .topMain__title {
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -43%);
+    -webkit-transform: translate(-50%, -43%);
+  }
+  #topMain .topMain__mainVisual {
+    height: 86vh;
   }
   #topWorks .topWorks__contents .topWorks__list {
-    margin: 0 auto 20px;
-    width: 95%;
+    width: 100%;
   }
 }
