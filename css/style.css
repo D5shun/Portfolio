@@ -9,17 +9,16 @@ body {
 #topWorks .section__title {
   color: #444;
   display: inline-block;
-  font-family: 'Yu Gothic';
-  font-size: 4.0rem;
+  font-size: 4.2rem;
   margin: 80px 0 0px;
 }
 
 #topWorks .section__sub-title {
-  font-family: 'Yu Gothic';
   display: inline-block;
+  font-weight: 500;
   width: 15%;
   font-size: 2.0rem;
-  margin: 60px auto 40px;
+  margin: 50px auto 30px;
   border-bottom: 1.5px solid #444;
   padding-bottom: 5px;
 }
@@ -38,7 +37,7 @@ body {
   position: fixed;
   z-index: 2;
   top: 0;
-  height: 80px;
+  height: 70px;
   width: 100%;
 }
 
@@ -52,8 +51,9 @@ body {
   justify-content: flex-end;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  height: 80px;
+  height: 70px;
   font-size: 2.3rem;
+  font-weight: 700;
 }
 
 .header .gnav .gnav__menu .gnav__menu-works {
@@ -82,30 +82,25 @@ body {
   white-space: nowrap;
   display: block;
   position: absolute;
-  top: 50%;
+  top: 43%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -43%);
+  -webkit-transform: translate(-50%, -43%);
   color: #fff;
-  font-size: 4.0rem;
-  font-weight: normal;
+  font-size: 5.5rem;
+  font-weight: 500;
   letter-spacing: 0.02em;
 }
 
 #topMain .topMain__mainVisual {
   width: 100%;
-  height: 100vh;
+  height: 93.5vh;
   object-fit: cover;
-  object-position: 40%;
 }
 
 #topWorks {
   max-width: 1080px;
   margin: 0 auto;
-}
-
-#topWorks .topWorks__contents:first-of-type .topWorks__list:first-of-type img {
-  border: 5px solid darkorange;
 }
 
 #topWorks .topWorks__contents {
@@ -129,31 +124,6 @@ body {
 
 #topWorks .topWorks__contents .topWorks__list img:hover {
   opacity: 0.7;
-  width: 91%;
-}
-
-#topWorks .topWorks__contents .topWorks__list:first-of-type img {
-  border: 5px solid yellow;
-}
-
-#topWorks .topWorks__contents .topWorks__list:nth-of-type(2) img {
-  border: 5px solid #00ff8c;
-}
-
-#topWorks .topWorks__contents .topWorks__list:nth-of-type(3) img {
-  border: 5px solid #ff82bc;
-}
-
-#topWorks .topWorks__contents .topWorks__list:nth-of-type(4) img {
-  border: 5px solid #0080ff;
-}
-
-#topWorks .topWorks__contents .topWorks__list:nth-of-type(5) img {
-  border: 5px solid #8000ff;
-}
-
-#topWorks .topWorks__contents .topWorks__list:nth-of-type(6) img {
-  border: 5px solid #3bf3f7;
 }
 
 #topWorks .topWorks__contents .topWorks__list .topWorks__list-copy {
@@ -190,6 +160,9 @@ body {
   }
   .header .gnav .gnav__menu .gnav__menu-about {
     margin-right: 40px;
+  }
+  html {
+    font-size: 58%;
   }
   #topWorks .topWorks__contents .topWorks__list {
     margin: 0 auto 20px;

@@ -17,16 +17,15 @@ body {
     .section__title {
         color: #444;
         display: inline-block;
-        font-family: 'Yu Gothic';
-        font-size: 4.0rem;
+        font-size: 4.2rem;
         margin: 80px 0 0px;
     }
     .section__sub-title {
-        font-family: 'Yu Gothic';
         display: inline-block;
+        font-weight: 500;
         width: 15%;
         font-size: 2.0rem;
-        margin: 60px auto 40px;
+        margin: 50px auto 30px;
         border-bottom: 1.5px solid #444;
         // 文字とボーダーの間の余白
         padding-bottom: 5px;
@@ -47,7 +46,7 @@ body {
         position: fixed;
         z-index:2;
         top: 0;
-        height: 80px;
+        height: 70px;
         width: 100%;
         .gnav__menu {
             display: flex;
@@ -59,8 +58,9 @@ body {
             justify-content: flex-end;
             -webkit-box-pack: end;
             -ms-flex-pack: end;
-            height: 80px;
+            height: 70px;
             font-size: 2.3rem;
+            font-weight: 700;
             .gnav__menu-works {
                 margin-right: 40px;
             }
@@ -88,32 +88,24 @@ body {
         white-space: nowrap;
         display: block;
         position: absolute;
-        top: 50%;
+        top: 43%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -43%);
+        -webkit-transform: translate(-50%, -43%);
         color: #fff;
-        font-size: 4.0rem;
-        font-weight: normal;
+        font-size: 5.5rem;
+        font-weight: 500;
         letter-spacing: 0.02em;
     }
     .topMain__mainVisual {
         width: 100%;
-        height: 100vh;
+        height: 93.5vh;
         object-fit: cover;
-        object-position: 40%;
     }
 }
 #topWorks {
     max-width: 1080px;
     margin: 0 auto;
-    .topWorks__contents:first-of-type {
-        .topWorks__list {
-            &:first-of-type img {
-                border: 5px solid $orange;
-            }
-        }
-    }
     .topWorks__contents {
         width: 100%;
         .topWorks__list {
@@ -129,26 +121,7 @@ body {
                 object-fit: cover;
                 &:hover {
                     opacity: 0.7;
-                    width: 91%;
                 }
-            }
-            &:first-of-type img {
-                border: 5px solid $yellow;
-            }
-            &:nth-of-type(2) img {
-                border: 5px solid $green;
-            }
-            &:nth-of-type(3) img {
-                border: 5px solid $pink;
-            }
-            &:nth-of-type(4) img {
-                border: 5px solid $blue;
-            }
-            &:nth-of-type(5) img {
-                border: 5px solid $purple;
-            }
-            &:nth-of-type(6) img {
-                border: 5px solid $skyblue;
             }
             .topWorks__list-copy {
                 font-size: 1.7rem;
@@ -186,6 +159,9 @@ body {
         } .gnav__menu-about {
             margin-right: 40px;
         }
+    }
+    html {
+        font-size: 58%;
     }
     #topWorks {
         .topWorks__contents {
