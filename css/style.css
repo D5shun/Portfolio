@@ -166,13 +166,13 @@ body {
     font-size: 55%;
   }
   #topMain .topMain__title {
-    top: 45%;
+    top: 40%;
     left: 50%;
-    transform: translate(-50%, -45%);
-    -webkit-transform: translate(-50%, -45%);
+    transform: translate(-50%, -40%);
+    -webkit-transform: translate(-50%, -40%);
   }
   #topMain .topMain__mainVisual {
-    height: 90vh;
+    height: 80vh;
   }
   #topWorks .topWorks__contents .topWorks__list {
     width: 100%;
