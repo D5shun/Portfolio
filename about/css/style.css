@@ -7,14 +7,6 @@ body {
   line-height: 1.7;
 }
 
-section {
-  background-color: #fff;
-  padding-bottom: 60px;
-  margin: 60px auto;
-  max-width: 800px;
-  border-radius: 0.5em;
-}
-
 .section__title {
   width: 100%;
   text-align: center;
@@ -23,8 +15,8 @@ section {
 .section__title p {
   display: inline-block;
   font-size: 2.4rem;
-  padding: 0 25px 2px;
-  margin: 40px 0;
+  padding: 0 25px 3px;
+  margin-bottom: 40px;
   border-bottom: 2px solid #ff9100;
 }
 
@@ -73,16 +65,19 @@ section {
 }
 
 .about {
-  background-color: transparent;
   position: relative;
+  max-width: 800px;
   height: 400px;
+  padding-bottom: 60px;
+  margin: 30px auto;
+  border-radius: 0.5em;
 }
 
 .about .about__image {
   position: absolute;
   z-index: 2;
   top: 22%;
-  left: 5%;
+  left: 0;
   max-width: 380px;
 }
 
@@ -93,7 +88,7 @@ section {
 
 .about .about__contents {
   position: absolute;
-  right: -10%;
+  right: -5%;
   top: 0;
   width: 67%;
   background-color: #fff;
@@ -108,28 +103,23 @@ section {
 }
 
 .about .about__contents .about__title {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   margin-bottom: 5px;
   border-bottom: 2px solid #ff9100;
 }
 
-.past .past__text {
-  margin: 0 auto;
-  max-width: 650px;
+.past, .vision {
+  max-width: 60%;
+  margin: 60px auto 0;
 }
 
-.vision {
-  background-color: #c6ebfc;
-}
-
-.vision .vision__text {
-  margin: 0 auto;
-  max-width: 650px;
+.vision .vision__text span {
+  font-weight: bold;
 }
 
 .skill {
-  max-width: 1080px;
-  margin: 0 auto;
+  max-width: 80%;
+  margin: 60px auto 0;
 }
 
 .skill .skill__contents {
@@ -159,11 +149,11 @@ section {
 }
 
 .career {
-  background-color: transparent;
+  margin: 60px auto 0;
+  max-width: 600px;
 }
 
 .career .career__contents {
-  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -231,14 +221,8 @@ section {
   .about .about__contents .about__title {
     margin-bottom: 230px;
   }
-  .past, .vision, .skill, .career {
-    width: 90%;
-  }
-  .past .past__text {
-    width: 85%;
-  }
-  .vision .vision__text {
-    width: 85%;
+  .past, .vision {
+    max-width: 80%;
   }
   .skill .skill__contents .skill__list {
     width: 70%;
