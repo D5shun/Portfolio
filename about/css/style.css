@@ -212,7 +212,7 @@ body {
     height: 480px;
   }
   .about .about__image {
-    top: 16.5%;
+    top: 17%;
     left: 8%;
     max-width: 340px;
   }
@@ -222,7 +222,7 @@ body {
     padding-left: 2em;
   }
   .about .about__contents .about__title {
-    margin-bottom: 220px;
+    margin-bottom: 230px;
   }
   .past, .vision {
     max-width: 80%;
