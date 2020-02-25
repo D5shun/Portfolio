@@ -111,6 +111,7 @@ body {
 #topWorks .topWorks__contents .topWorks__list {
   display: inline-block;
   width: 49%;
+  margin-bottom: 5px;
 }
 
 #topWorks .topWorks__contents .topWorks__list img {
